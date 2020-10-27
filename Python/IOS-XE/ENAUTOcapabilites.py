@@ -1,4 +1,7 @@
 from ncclient import manager
+import logging
+
+#logging.basicConfig(Level=logging.DEBUG)
 
 #settings used to authenticate
 router = {
@@ -13,4 +16,7 @@ router = {
 
 #use hostkey_verify=False as this is a public sandbox and it creates self generated keys and so we waont be able to verify them
 with manager.connect(**router, hostkey_verify=False) as m:
-    print('hello world')
+    for capability in m.server_capabilities:
+        print('*' * 25)
+        print(' ')
+        print(capability)
