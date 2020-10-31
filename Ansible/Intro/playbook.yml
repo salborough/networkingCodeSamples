@@ -2,6 +2,6 @@
 - hosts: linuxhosts
   tasks:
     - name: get system status
-      shell: uname -a > /Users/salborough/Downloads/output.txt
+      shell: uname -a > /home/salborough/Downloads/output.txt
     - name: print current user
-      shell: whoami >> /Users/salborough/Downloads/output.txt
+      shell: whoami >> /home/salborough/Downloads/output.txt
