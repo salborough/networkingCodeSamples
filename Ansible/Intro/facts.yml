@@ -1,6 +1,6 @@
 ---
 - name: facts
-  hosts: ubuntu
+  hosts: ubuntu-server
   # facts demo
   # ansible ubuntu -m setup
   # ansible ubuntu -m setup -a "filter=*ansible_os_family"
