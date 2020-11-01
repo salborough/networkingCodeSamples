@@ -3,6 +3,6 @@
   hosts: linuxhosts
   tasks:
     - name: get system status and info
-      shell: uname -a > ~/Downloads/output.txt
+      shell: uname -a > /home/salborough/Downloads/output.txt
     - name: print my username
-      shell: whoami >> ~/Downloads/output.txt
+      shell: whoami >> /home/salborough/Downloads/output.txt

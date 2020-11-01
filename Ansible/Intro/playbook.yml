@@ -1,5 +1,6 @@
 ---
-- hosts: linuxhosts
+- name: Initial test
+  hosts: linuxhosts
   tasks:
     - name: get system status
       shell: uname -a > ~/Downloads/output.txt
